@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的摄影空间 - 联系我</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 3px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-form {
+            margin: 20px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的摄影空间</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">主页</a>
+        <a href="about.html">关于我</a>
+        <a href="nature.html">自然风光</a>
+        <a href="city.html">城市掠影</a>
+        <a href="contact.html">联系我</a>
+    </nav>
+
+    <div class="container">
+        <h2>联系我</h2>
+        
+        <div class="contact-info">
+            <h3>联系方式</h3>
+            <p>如果你喜欢我的作品，或者有任何建议，欢迎联系我：</p>
+            <ul>
+                <li>📧 邮箱：w3833282831@qq.com</li>
+                <li>📱 微信：w15671058209</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="contact-form">
+            <h3>留言表单</h3>
+            <form action="#" method="post">
+                <label for="name">您的姓名：</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">您的邮箱：</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">留言内容：</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">发送留言</button>
+            </form>
+            <p><small>注意：这个表单目前仅作展示，暂无后端功能。</small></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 我的摄影空间. 所有权利保留.</p>
+    </footer>
+</body>
+</html>
