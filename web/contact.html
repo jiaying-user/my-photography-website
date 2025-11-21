@@ -3,122 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的摄影空间 - 联系我</title>
+    <title>Contact - 光影日记</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+            min-height: 100vh;
         }
         header {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.85);
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
         }
         nav {
-            background-color: #444;
-            padding: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 18px;
             text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
+            margin: 0 25px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: 600;
         }
         nav a:hover {
-            background-color: #555;
-            border-radius: 3px;
+            background: #96e6a1;
+            color: white;
+            transform: translateY(-3px);
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
+            width: 85%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            line-height: 1.8;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            width: 100%;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
         }
         .contact-info {
-            margin: 20px 0;
+            background: #f8fff8;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #96e6a1;
         }
         .contact-form {
+            background: #f0fff0;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
             margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
-        .contact-form input, .contact-form textarea {
+        .contact-icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            width: 40px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        .form-group input, .form-group textarea {
             width: 100%;
-            padding: 8px;
-            margin: 5px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
         }
-        .contact-form button {
-            background-color: #333;
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #96e6a1;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #96e6a1, #d4fc79);
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 4px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 600;
             cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
         }
-        .contact-form button:hover {
-            background-color: #555;
+        .submit-btn:hover {
+            transform: translateY(-3px);
+        }
+        .collab-idea {
+            background: linear-gradient(135deg, #e8f5e8, #f0f8ff);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 25px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的摄影空间</h1>
+        <h1>📞 Let's Connect</h1>
+        <div class="subtitle">Share Stories, Create Memories · 期待与你的美好相遇</div>
     </header>
 
     <nav>
-        <a href="../index.html">主页</a>
-        <a href="about.html">关于我</a>
-        <a href="nature.html">自然风光</a>
-        <a href="city.html">城市掠影</a>
-        <a href="contact.html">联系我</a>
+        <a href=" ">🏠 Home</a >
+        <a href="about.html">👩‍💻 About</a >
+        <a href="nature.html">🌿 Nature</a >
+        <a href="city.html">🏙️ City</a >
+        <a href="contact.html">📞 Contact</a >
     </nav>
 
     <div class="container">
-        <h2>联系我</h2>
-        
-        <div class="contact-info">
-            <h3>联系方式</h3>
-            <p>如果你喜欢我的作品，或者有任何建议，欢迎联系我：</p>
-            <ul>
-                <li>📧 邮箱：w3833282831@qq.com</li>
-                <li>📱 微信：w15671058209</li>
+        <h2>💌 很高兴认识你！</h2>
+        <p>如果你喜欢我的照片，或者想分享你的故事，欢迎联系我！作为华科的CS女生，我特别喜欢交朋友，也很期待认识更多志同道合的小伙伴。</p >
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>📱 联系方式</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>邮箱</strong><br>
+                        w3833282831@qq.com
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div>
+                        <strong>微信</strong><br>
+                        w15671058209
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🎓</div>
+                    <div>
+                        <strong>学校</strong><br>
+                        华中科技大学 计算机学院
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <strong>位置</strong><br>
+                        湖北武汉 · 洪山区
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>✍️ 给我留言</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">你的名字</label>
+                        <input type="text" id="name" name="name" placeholder="怎么称呼你呢？" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">联系方式</label>
+                        <input type="email" id="email" name="email" placeholder="邮箱/微信/电话" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">想说的话</label>
+                        <textarea id="message" name="message" rows="5" placeholder="分享你的故事、想法，或者只是想打个招呼..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">🚀 发送消息</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="collab-idea">
+            <h3>🌟 Collaboration Ideas</h3>
+            <p>如果你也是华科的学生，或者对摄影、编程感兴趣，我们可以：</p >
+            <ul style="text-align: left; display: inline-block;">
+                <li>📸 一起探索武汉的拍照圣地</li>
+                <li>💻 交流编程学习心得</li>
+                <li>🎨 合作创作有趣的项目</li>
+                <li>☕ 只是简单喝杯咖啡聊聊天</li>
             </ul>
         </div>
 
-        <hr>
-
-        <div class="contact-form">
-            <h3>留言表单</h3>
-            <form action="#" method="post">
-                <label for="name">您的姓名：</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">您的邮箱：</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">留言内容：</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">发送留言</button>
-            </form>
-            <p><small>注意：这个表单目前仅作展示，暂无后端功能。</small></p>
-        </div>
+        <p style="text-align: center; color: #666; margin-top: 30px;">
+            "Every new friend is a new adventure."<br>
+            「每个新朋友都是一次新的冒险」
+        </p >
     </div>
 
     <footer>
-        <p>&copy; 2025 我的摄影空间. 所有权利保留.</p>
+        <p>&copy; 2025 光影日记 | 期待与你在光影世界中相遇</p >
     </footer>
 </body>
 </html>

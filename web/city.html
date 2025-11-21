@@ -3,88 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的摄影空间 - 城市掠影</title>
+    <title>City Life - 光影日记</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            min-height: 100vh;
         }
         header {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.85);
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
         }
         nav {
-            background-color: #444;
-            padding: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 18px;
             text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
+            margin: 0 25px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: 600;
         }
         nav a:hover {
-            background-color: #555;
-            border-radius: 3px;
+            background: #fcb69f;
+            color: white;
+            transform: translateY(-3px);
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
+            width: 85%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            line-height: 1.8;
+        }
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .city-card {
+            background: #fffaf0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .city-card:hover {
+            transform: translateY(-8px);
+            border-color: #fcb69f;
+        }
+        .city-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .card-content {
             padding: 20px;
-            background-color: white;
-            border-radius: 5px;
+        }
+        .urban-journey {
+            background: linear-gradient(135deg, #fffaf0, #f0f8ff);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-right: 5px solid #fcb69f;
         }
         footer {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.9);
             color: white;
             text-align: center;
-            padding: 10px 0;
-            width: 100%;
-        }
-        img {
-            max-width: 100%;
-            margin: 10px;
-            border-radius: 5px;
-        }
-        .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            padding: 25px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的摄影空间</h1>
+        <h1>🏙️ Urban Canvas</h1>
+        <div class="subtitle">City Stories Through My Lens · 城市里的青春诗篇</div>
     </header>
 
     <nav>
-        <a href="../index.html">主页</a>
-        <a href="about.html">关于我</a>
-        <a href="nature.html">自然风光</a>
-        <a href="city.html">城市掠影</a>
-        <a href="contact.html">联系我</a>
+        <a href=" ">🏠 Home</a >
+        <a href="about.html">👩‍💻 About</a >
+        <a href="nature.html">🌿 Nature</a >
+        <a href="city.html">🏙️ City</a >
+        <a href="contact.html">📞 Contact</a >
     </nav>
 
     <div class="container">
-        <h2>城市掠影</h2>
-        <p>这里记录了我走过的城市街景，包括现代建筑、历史古迹和街头生活等。</p>
-        
-        <div class="photo-gallery">
-            <img src="../image/city-1.jpg" alt="城市照片1" width="45%">
-            <img src="../image/city-2.jpg" alt="城市照片2" width="45%">
-            <img src="../image/city-3.jpg" alt="城市照片3" width="45%">
-            <img src="../image/city-4.jpg" alt="城市照片4" width="45%">
+        <h2>🌆 武汉：我的第二故乡</h2>
+        <p>从家乡来到武汉求学，这座城市用它的热情和活力拥抱了我。在这里，每个街角都有故事，每盏灯火都有温度。</p >
+
+        <div class="urban-journey">
+            <h3>🚇 城市探索日记</h3>
+            <p>周末的时光，我喜欢带着相机穿梭在武汉的大街小巷。从光谷的现代繁华到江汉路的复古风情，从黄鹤楼的千年诗意到东湖的自然静谧。</p >
+            <p>作为CS女孩，我特别喜欢观察城市中的<strong>科技与人文交融</strong>——地铁里的智能系统、街头的数字艺术、还有那些在传统中创新的小店。</p >
         </div>
+
+        <div class="city-grid">
+            <div class="city-card">
+                < img src="../image/city-1.jpg" alt="光谷广场">
+                <div class="card-content">
+                    <strong>✨ 光谷之夜</strong>
+                    <p>霓虹灯下的年轻面孔，梦想在这里闪闪发光</p >
+                </div>
+            </div>
+            <div class="city-card">
+                < img src="../image/city-2.jpg" alt="江汉路">
+                <div class="card-content">
+                    <strong>🏛️ 历史回响</strong>
+                    <p>老建筑诉说着时光故事，新旧在这里对话</p >
+                </div>
+            </div>
+            <div class="city-card">
+                < img src="../image/city-3.jpg" alt="东湖绿道">
+                <div class="card-content">
+                    <strong>🚴‍♀️ 骑行时光</strong>
+                    <p>东湖边的周末，清风拂面，烦恼全无</p >
+                </div>
+            </div>
+            <div class="city-card">
+                < img src="../image/city-4.jpg" alt="夜市烟火">
+                <div class="card-content">
+                    <strong>🍢 人间烟火</strong>
+                    <p>夜市里热气腾腾的生活，最抚凡人心</p >
+                </div>
+            </div>
+        </div>
+
+        <h3>🎒 女大学生的城市冒险</h3>
+        <p>一个人，一部相机，无数个探索的周末。在武汉的这一年，我学会了独立，也收获了成长。这座城市见证了我的每一次突破——从害羞的新生到能够独自规划旅行路线的探索者。</p >
+        
+        <p style="text-align: center; font-style: italic; color: #666; margin-top: 30px;">
+            "The city is not a concrete jungle, it is a human zoo." — Desmond Morris<br>
+            「城市不是混凝土丛林，它是人类动物园」
+        </p >
     </div>
 
     <footer>
-        <p>&copy; 2025 我的摄影空间. 所有权利保留.</p>
+        <p>&copy; 2025 光影日记 | 记录武汉求学时光的每一个精彩瞬间</p >
     </footer>
 </body>
 </html>

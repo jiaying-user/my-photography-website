@@ -3,77 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的摄影空间 - 主页</title>
+    <title>光影日记 - 华科CS女生的视觉笔记</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
         header {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.85);
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
         }
         nav {
-            background-color: #444;
-            padding: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 18px;
             text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
+            margin: 0 25px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 1.1em;
         }
         nav a:hover {
-            background-color: #555;
-            border-radius: 3px;
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
+            width: 85%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            line-height: 1.8;
+        }
+        .intro-text {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .highlight {
+            color: #667eea;
+            font-weight: bold;
         }
         footer {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.9);
             color: white;
             text-align: center;
-            padding: 10px 0;
-            width: 100%;
+            padding: 25px 0;
+            margin-top: 60px;
+        }
+        .cs-girl-section {
+            background: linear-gradient(135deg, #f0f8ff, #fff0f5);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 2px solid #667eea;
+        }
+        .hust-badge {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin: 5px;
         }
         img {
             max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的摄影空间</h1>
+        <h1>📸 光影日记</h1>
+        <div class="subtitle">CS Girl's Visual Notebook · 代码与镜头的双重奏</div>
     </header>
 
     <nav>
-        <a href="index.html">主页</a>
-        <a href="web/about.html">关于我</a>
-        <a href="web/nature.html">自然风光</a>
-        <a href="web/city.html">城市掠影</a>
-        <a href="web/contact.html">联系我</a>
+        <a href=" ">🏠 Home</a >
+        <a href="web/about.html">👩‍💻 About</a >
+        <a href="web/nature.html">🌿 Nature</a >
+        <a href="web/city.html">🏙️ City</a >
+        <a href="web/contact.html">📞 Contact</a >
     </nav>
 
     <div class="container">
-        <h2>你好，访客！</h2>
-        <p>这里是我分享摄影作品的小天地。我热爱用镜头记录生活中的美好瞬间，无论是壮丽的自然风光，还是充满烟火气的城市街景。</p>
-        <p>请随意浏览，希望你能喜欢我的作品。</p>
+        <div class="intro-text">
+            欢迎来到我的<strong class="highlight">光影日记</strong>！这里是<span class="hust-badge">华科计算机女孩</span>的视觉世界，记录代码之外的彩色生活。
+        </div>
+
+        <h2>✨ 你好，来访的朋友！</h2>
+        <p>我是华中科技大学计算机学院的一名大一女生。在二进制世界的严谨之外，我找到了另一种表达方式——<strong>摄影</strong>。这里没有复杂的算法，只有真实的情感和生活的温度。</p >
         
-        <img src="image/home-banner.jpg" alt="一张美丽的风景横幅图">
+        <div class="cs-girl-section">
+            <h3>💻 👧 当CS女孩爱上摄影</h3>
+            <p>别人常说理工科女生不够浪漫，但我想证明：<strong>逻辑与美感可以完美共存</strong>！白天我在代码中构建数字世界，夜晚我用镜头捕捉真实美好。</p >
+            <p>从调试程序到调试构图，从写代码到写光影故事——这是属于我的独特大学生活方式。</p >
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>🌿 自然治愈</h4>
+                <p>在代码疲惫时，大自然是最好的心理按摩</p >
+            </div>
+            <div class="feature-card">
+                <h4>🏙️ 城市探索</h4>
+                <p>用脚步丈量武汉，用镜头记录青春</p >
+            </div>
+            <div class="feature-card">
+                <h4>📚 校园时光</h4>
+                <p>华科生活的点点滴滴，都是珍贵记忆</p >
+            </div>
+            <div class="feature-card">
+                <h4>💝 女生视角</h4>
+                <p>细腻观察，温柔记录，独特表达</p >
+            </div>
+        </div>
+
+        <p>摄影于我，是学业压力的解药，是情感表达的窗口，更是认识这个世界的独特方式。每一张照片背后，都有一个属于女大学生的<strong>小确幸故事</strong>。</p >
+
+        < img src="image/yejing.jpg" alt="校园风景" style="margin-top: 30px;">
+        
+        <div style="text-align: center; margin-top: 20px; color: #666; font-style: italic;">
+            "We are making photographs to understand what our lives mean to us." — Ralph Hattersley<br>
+            「我们拍照，是为了理解生活对我们的意义」
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 我的摄影空间. 所有权利保留。</p>
+        <p>&copy; 2025 光影日记 | 华中科技大学 · 计算机女孩的视觉笔记</p >
     </footer>
 </body>
 </html>

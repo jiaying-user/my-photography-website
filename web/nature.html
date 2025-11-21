@@ -3,88 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的摄影空间 - 自然风光</title>
+    <title>Nature - 光影日记</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            min-height: 100vh;
         }
         header {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.85);
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
         }
         nav {
-            background-color: #444;
-            padding: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 18px;
             text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
+            margin: 0 25px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: 600;
         }
         nav a:hover {
-            background-color: #555;
-            border-radius: 3px;
+            background: #a1c4fd;
+            color: white;
+            transform: translateY(-3px);
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            width: 100%;
-        }
-        img {
-            max-width: 100%;
-            margin: 10px;
-            border-radius: 5px;
+            width: 85%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            line-height: 1.8;
         }
         .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .photo-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .photo-card:hover {
+            transform: translateY(-10px);
+        }
+        .photo-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .photo-desc {
+            padding: 20px;
+            text-align: center;
+        }
+        .nature-quote {
+            background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 5px solid #a1c4fd;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 25px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的摄影空间</h1>
+        <h1>🌿 Nature Escape</h1>
+        <div class="subtitle">When Code Meets Nature · 代码之外的宁静时光</div>
     </header>
 
     <nav>
-        <a href="../index.html">主页</a>
-        <a href="about.html">关于我</a>
-        <a href="nature.html">自然风光</a>
-        <a href="city.html">城市掠影</a>
-        <a href="contact.html">联系我</a>
+        <a href=" ">🏠 Home</a >
+        <a href="about.html">👩‍💻 About</a >
+        <a href="nature.html">🌿 Nature</a >
+        <a href="city.html">🏙️ City</a >
+        <a href="contact.html">📞 Contact</a >
     </nav>
 
     <div class="container">
-        <h2>自然风光</h2>
-        <p>这里展示了我拍摄的自然风光作品，包括山川、湖泊、森林和日出日落等美景。</p>
+        <h2>🌼 大自然的治愈力量</h2>
+        <p>在调试代码的间隙，我总喜欢走进自然。这里没有bug，没有deadline，只有最纯粹的美。每一片叶子、每一朵云都在诉说着自己的故事。</p >
         
-        <div class="photo-gallery">
-            <img src="../image/nature-1.jpg" alt="自然风光照片1" width="45%">
-            <img src="../image/nature-2.jpg" alt="自然风光照片2" width="45%">
-            <img src="../image/nature-3.jpg" alt="自然风光照片3" width="45%">
-            <img src="../image/nature-4.jpg" alt="自然风光照片4" width="45%">
+        <div class="nature-quote">
+            "The poetry of earth is never dead." — John Keats<br>
+            「大地的诗篇永不会死」—— 济慈
         </div>
+
+        <div class="photo-gallery">
+            <div class="photo-card">
+                < img src="../image/nature-1.jpg" alt="醉晚亭">
+                <div class="photo-desc">
+                    <strong>🏯 醉晚亭印象</strong><br>
+                    华科的地标建筑，承载着无数青春记忆的宁静角落
+                </div>
+            </div>
+            <div class="photo-card">
+                < img src="../image/nature-2.jpg" alt="湖边夕阳">
+                <div class="photo-desc">
+                    <strong>🌅 湖边夕阳</strong><br>
+                    青年园的黄昏，代码的烦恼都融化在金色光影里
+                </div>
+            </div>
+            <div class="photo-card">
+                < img src="../image/nature-3.jpg" alt="林间光影">
+                <div class="photo-desc">
+                    <strong>🌲 林间光影</strong><br>
+                    梧桐语问的林荫道，光与影的完美算法
+                </div>
+            </div>
+            <div class="photo-card">
+                < img src="../image/nature-4.jpg" alt="校园春色">
+                <div class="photo-desc">
+                    <strong>🌸 校园春色</strong><br>
+                    春日校园里的生机勃勃，每一处都是风景
+                </div>
+            </div>
+        </div>
+
+        <h3>💚 为什么热爱自然摄影？</h3>
+        <p>作为CS学生，我们整天面对屏幕和代码。自然摄影是我<strong>重新连接真实世界</strong>的方式。在森林中漫步时，我感受到的宁静比任何算法都更治愈。</p >
+        
+        <p>每次按下快门，都是在收集一份自然的礼物。这些照片提醒我：在追求技术的同时，不要忘记生活中最简单纯粹的美好。</p >
     </div>
 
     <footer>
-        <p>&copy; 2025 我的摄影空间. 所有权利保留.</p>
+        <p>&copy; 2025 光影日记 | 在代码与自然间寻找平衡</p >
     </footer>
 </body>
 </html>

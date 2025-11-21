@@ -3,76 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的摄影空间 - 关于我</title>
+    <title>About Me - 光影日记</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            min-height: 100vh;
         }
         header {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.85);
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
         }
         nav {
-            background-color: #444;
-            padding: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 18px;
             text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
+            margin: 0 25px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: 600;
         }
         nav a:hover {
-            background-color: #555;
-            border-radius: 3px;
+            background: #ff9a9e;
+            color: white;
+            transform: translateY(-3px);
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
+            width: 85%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            line-height: 1.8;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .profile-text {
+            flex: 1;
+        }
+        .profile-image {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+        .profile-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff9a9e;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        .english {
+            font-style: italic;
+            color: #666;
+            border-left: 3px solid #ff9a9e;
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+        .hust-badge {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin: 5px;
+        }
+        .girl-power {
+            background: #fff0f5;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px dashed #ffb6c1;
+            margin: 25px 0;
+        }
+        .tech-girl {
+            background: #f0f8ff;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #87ceeb;
+            margin: 25px 0;
         }
         footer {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.9);
             color: white;
             text-align: center;
-            padding: 10px 0;
-            width: 100%;
-        }
-        img {
-            max-width: 100%;
+            padding: 25px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的摄影空间</h1>
+        <h1>👩‍💻 About Me</h1>
+        <div class="subtitle">CS Girl with a Camera · Coding by Day, Capturing by Night</div>
     </header>
 
     <nav>
-        <a href="../index.html">主页</a>
-        <a href="about.html">关于我</a>
-        <a href="nature.html">自然风光</a>
-        <a href="city.html">城市掠影</a>
-        <a href="contact.html">联系我</a>
+        <a href=" ">🏠 Home</a >
+        <a href="about.html">👩‍💻 About</a >
+        <a href="nature.html">🌿 Nature</a >
+        <a href="city.html">🏙️ City</a >
+        <a href="contact.html">📞 Contact</a >
     </nav>
 
     <div class="container">
-        <h2>关于我</h2>
-        <p>我是一名业余摄影爱好者，热衷于记录生活，最喜欢的摄影题材是风光和人文。</p>
-        <p>摄影让我学会了发现美，记录美。</p>
-        <img src="../image/my-avatar.jpg" alt="我的头像" width="200">
+        <div class="profile-section">
+            <div class="profile-text">
+                <h2>Hi there! I'm <span class="highlight">一个爱拍照的CS女孩</span> 💖</h2>
+                <p>Currently a freshman at <span class="hust-badge">Huazhong University of Science and Technology</span>, majoring in Computer Science while pursuing my passion for photography.</p >
+                
+                <div class="english">
+                    "In a world of 0s and 1s, I find my balance through the lens." 
+                </div>
+
+                <p>白天是敲代码的计算机学生，晚上是追光逐影的摄影爱好者。这种奇妙的组合让我的大学生活格外丰富多彩！</p >
+            </div>
+            <div class="profile-image">
+                < img src="../image/my-avatar.jpg" alt="我的个人形象">
+            </div>
+        </div>
+
+        <div class="girl-power">
+            <h3>🎀 女孩的独特视角</h3>
+            <p>作为计算机学院的女生，我有着细腻的观察力和独特的审美视角。我喜欢捕捉那些<strong>温柔而有力</strong>的瞬间——阳光下花瓣的纹理、雨后街道的倒影、朋友们真诚的笑容。</p >
+            <p>摄影是我在代码世界之外的<strong>情感出口</strong>，让我在逻辑与创意之间找到完美的平衡。</p >
+        </div>
+
+        <div class="tech-girl">
+            <h3>💻 Code & Camera 的完美结合</h3>
+            <p>学习编程让我对摄影有了更深的理解：</p >
+            <ul>
+                <li><strong>算法思维</strong> → 构图时的逻辑安排</li>
+                <li><strong>调试耐心</strong> → 等待完美光线的坚持</li>
+                <li><strong>创新精神</strong> → 尝试不同拍摄角度</li>
+            </ul>
+            <p>谁说理工科女生就不懂浪漫？我们用代码编写未来，用镜头记录美好！</p >
+        </div>
+
+        <h3>🌟 My Philosophy</h3>
+        <p>我相信，最好的照片不是技术最完美的，而是<strong>情感最真实的</strong>。就像写代码一样，最优雅的解决方案往往是最简洁的。</p >
+        
+        <div class="english" style="text-align: center; background: #fffaf0; padding: 20px; border-radius: 10px;">
+            "Life is like photography. You need the negatives to develop." 
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 我的摄影空间. 所有权利保留.</p>
+        <p>&copy; 2025 光影日记 | 华科计算机女孩的视觉笔记</p >
     </footer>
 </body>
 </html>
